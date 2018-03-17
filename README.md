@@ -1,6 +1,6 @@
-# 練習として作ったReactアプリ
+# 練習として作ったReactアプリ
 #### 画像ファイルを使っていますが.gitignoreに書いてある通り、画像ファイルは除外してあります。  
-#### 以下はcreate-react-app-typescriptで自動で作られた内容。  
+#### 以下はcreate-react-app-typescriptで自動で作られた内容。  
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
