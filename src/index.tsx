@@ -1,18 +1,21 @@
+// Top
+
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import { StoreState } from './types/index';
+// , applyMiddleware, compose
+import { createStore, Action } from 'redux';
 import { enthusiasm } from './reducers/index';
+import { StoreState } from './types/index';
 import App from './components/App';
 import './index.css';
 // <Hello name="Typescript" enthusiasmLevel={10} />
 
 // Top Level
 
-const store = createStore<StoreState>(enthusiasm, {
+const store = createStore<StoreState, Action, undefined, undefined>(enthusiasm, {
   enthusiasmLevel: 1,
-  languageName: 'Marine Blue',
+  languageName: 'Marine Blue'
 });
 
 ReactDOM.render(
